@@ -18,6 +18,20 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 <title>New Task</title>
 </head>
 <body>
+
+	<% 
+		if(session.getAttribute("username") == null) {
+			request.getRequestDispatcher("login.jsp").forward(request,response);
+		}
+	%>
+
+
+<div align="right">
+	<form action="WorkflowproLogout" method="post">
+		<b><i>${username}</i></b> <button class="btn btn-default" type="submit">Logout</button>
+	</form>
+</div>
+
 <center>
 <h1>Register New Task</h1>
 <form action="WorkflowproNewTaskRegister" method="post" enctype="multipart/form-data">
