@@ -160,6 +160,18 @@
   	<description></description>
   	<servlet-class>com.company.workflowpro.controller.WorkflowproLogout</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>WorkflowproCommentsDisplay</servlet-name>
+  	<display-name>WorkflowproCommentsDisplay</display-name>
+  	<description></description>
+  	<servlet-class>com.company.workflowpro.controller.WorkflowproCommentsDisplay</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WorkflowproCommentsRegister</servlet-name>
+  	<display-name>WorkflowproCommentsRegister</display-name>
+  	<description></description>
+  	<servlet-class>com.company.workflowpro.controller.WorkflowproCommentsRegister</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>WorkflowproDisplay</servlet-name>
   	<url-pattern>/WorkflowproDisplay</url-pattern>
@@ -263,6 +275,14 @@
   <servlet-mapping>
   	<servlet-name>WorkflowproLogout</servlet-name>
   	<url-pattern>/WorkflowproLogout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WorkflowproCommentsDisplay</servlet-name>
+  	<url-pattern>/WorkflowproCommentsDisplay</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WorkflowproCommentsRegister</servlet-name>
+  	<url-pattern>/WorkflowproCommentsRegister</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

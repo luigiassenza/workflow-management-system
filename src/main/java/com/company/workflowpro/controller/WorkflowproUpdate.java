@@ -15,9 +15,6 @@ import com.company.workflowpro.model.dao.WorkflowproToUpdate;
 import com.company.workflowpro.model.dto.WorkflowproDetail;
 import com.company.workflowpro.model.dto.WorkflowproDetailEmployee;
 
-/**
- * Servlet implementation class WorkflowproUpdate
- */
 public class WorkflowproUpdate extends HttpServlet {
    
 	

@@ -16,9 +16,9 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
 integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<center>
 <title>Workflow Update</title>
 </head>
+
 <body>
 
 	<% 
@@ -34,13 +34,16 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 	</form>
 </div>
 
+<center>
+
 <div id="container">
-	</div>
+	
 		<h3>Enter the details below</h3>
 	<div>
+	<c:forEach items="${details}" var="item">
 		<form action="WorkflowproUpdateRegister" method="post" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" -->
 			<table class="table table-striped table-nonfluid table-bordered" style="width:auto">
-			<c:forEach items="${details}" var="item">
+			<!-- <c:forEach items="${details}" var="item"> -->
 				
 				<tr>
 					<td style="vertical-align:middle">Name:</td>
@@ -121,20 +124,73 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 							</tr>
 						</c:forEach>
 					</table>
-				</tr>
-				
-				<!-- end section to show files if any -->
-			</c:forEach>
-			</table>
-		 </form>
 					
-					<br>
 					${message}
 				
 				<form action="WorkflowproUpdateBack" method="post">
 					<input type="submit" value="BACK" class="btn btn-default">
 				</form>
+		<br>
+		<!-- Real time chat message system -->		
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(document).ready(function(){
+                 setInterval(function() {
+                      $("#javaquery").load("WorkflowproCommentsDisplay",{idWorkflowpro:${item.id}});
+                 }, 3000);
+            });
+       	</script>
+       	<div id="javaquery"></div>
+       	
+       	
+	 <form id="commentForm" name="commentForm" action="WorkflowproCommentsRegister" method="post">
+	 	<textarea id="comment" name="comment" placeholder="Write comment"></textarea>
+	 	<input type="hidden" name="idWorkflowpro" value="${item.id}">
+	 	<input type="hidden" name="username" value="${username}"><br>
+	 	<input type="submit" value="Sent Comment" class="btn btn-default">
+	 </form>
+	 
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  
+ <script type="text/javascript">
+
+	 var form = $('#commentForm');
+	 form.submit(function () {
+	
+	 $.ajax({
+	 type: form.attr('method'),
+	 url: form.attr('action'),
+	 data: form.serialize(),
+	 success: function (data) {
+	 var result=data;
+	 
+	 $('#content').html(result);
+	 $('#comment').val('');
+	
+	 }
+	 });
+	
+	 return false;
+	 }); 
+</script>
+<div id="content"></div>
+					
+				</tr>
+				 <!--  ${item.id} id works till here -->
+				<!-- end section to show files if any -->
+			<!-- </c:forEach> -->
+			
+			
+			
+			</table>
+		 </form>
+		 <br>
+					
+		 
+</c:forEach>
+					
 		
+    </div>   	
 	</div>
 </center>
 </body>

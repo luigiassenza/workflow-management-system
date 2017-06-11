@@ -17,7 +17,6 @@ public class WorkflowproLogin extends HttpServlet {
 		String username = request.getParameter("username");
 		try {
 			boolean nameCheck = new WorkflowproToLogin().login(username);
-			System.out.println(nameCheck);
 			if(nameCheck == true) {
 				HttpSession session = request.getSession();
 				session.setAttribute("username", username);
