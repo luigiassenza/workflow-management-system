@@ -21,8 +21,9 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 <body>
 <center>
 
-	<c:forEach items="${comments}" var="item">
+	
 	<table class="table table-striped table-nonfluid table-bordered" style="width:auto">
+	<c:forEach items="${comments}" var="item">
 		<tr>
 			<td colspan="2">${item.comment}</td>
 		</tr>
@@ -30,8 +31,15 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 			<td><i>${item.commentDate}</i></td>
 			<td><i>${item.username}</i></td>
 		</tr>
-	</table>
+		<tr>
+			<td colspan="2" bgcolor="#606060"></td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#606060"></td>
+		</tr>
 	</c:forEach>
+	</table>
+	
 	
 </center>
 </body>
