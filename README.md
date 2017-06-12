@@ -10,8 +10,8 @@
 
 
 ### <i>Front End</i>
-|  HTML   |  JSP    | Bootstrap | Google Charts    |
-| -------- | ------ | ------------ | --------- |
-| ![html](https://user-images.githubusercontent.com/18742814/26996468-5074ac20-4d6a-11e7-9946-0caaef2693d0.png) | ![jsp](https://user-images.githubusercontent.com/18742814/26996806-eea818ee-4d6c-11e7-9b50-c329c25f9b06.png) |  ![bootstrapic](https://user-images.githubusercontent.com/18742814/26996489-788e210a-4d6a-11e7-8e42-7ccd9cf9299e.png) | ![google-charts jpg](https://user-images.githubusercontent.com/18742814/26996582-07119646-4d6b-11e7-8d8f-7a90bdc0e148.png)  | 
+|  HTML   |  JSP    | Bootstrap | Google Charts    | jQuery |
+| -------- | ------ | ------------ | --------- | ---------|
+| ![html](https://user-images.githubusercontent.com/18742814/26996468-5074ac20-4d6a-11e7-9946-0caaef2693d0.png) | ![jsp](https://user-images.githubusercontent.com/18742814/26996806-eea818ee-4d6c-11e7-9b50-c329c25f9b06.png) | ![bootstrapic](https://user-images.githubusercontent.com/18742814/26996489-788e210a-4d6a-11e7-8e42-7ccd9cf9299e.png) | | ![jquery](https://user-images.githubusercontent.com/18742814/27045613-56836d64-4f99-11e7-9cca-af28f9ad0b68.png) |
 
    
