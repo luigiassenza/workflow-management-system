@@ -16,5 +16,5 @@
 
   
 <br>  
-For documentation please visit the wiki page of this repository: 
+For documentation please visit the wiki page of this repository: <br>
 https://github.com/luigiassenza/workflow-management-system/wiki
