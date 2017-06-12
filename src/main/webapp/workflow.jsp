@@ -105,10 +105,23 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 	%>
 
 
-<div align="right">
-	<form action="WorkflowproLogout" method="post">
-		<b><i>${username}</i></b> <button class="btn btn-default" type="submit">Logout</button>
-	</form>
+<div class="row">
+	<div class="col-md-1">
+		<div align="left">
+			<form action="WorkflowproHomepage" method="post">
+				<button class="btn btn-default" type="submit">Homepage</button>
+			</form>
+		</div>
+	</div>
+	<div class="col-md-9">
+	</div>
+	<div class="col-md-2">
+		<div align="right">
+			<form action="WorkflowproLogout" method="post">
+				<b><i>${username}</i></b> <button class="btn btn-default" type="submit">Logout</button>
+			</form>
+		</div>
+	</div>
 </div>
 
 <center>
@@ -126,7 +139,6 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
  <br>
  
 <center> 
-
 
 <br>
 <div class="row">

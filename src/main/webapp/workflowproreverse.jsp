@@ -15,30 +15,27 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
 integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<title>Comments</title>
+<title>Tasks Reverse</title>
 </head>
 <body>
 <center>
 
-	
 	<table class="table table-striped table-nonfluid table-bordered" style="width:auto">
-	<c:forEach items="${comments}" var="item">
+	<c:forEach items="${workflowsproreverse}" var="item">
 		<tr>
-			<td colspan="2">${item.comment}</td>
-		</tr>
-		<tr>
-			<td><i>${item.commentDate}</i></td>
-			<td><i>${item.username}</i></td>
-		</tr>
-		<tr>
-			<td colspan="2" bgcolor="#606060"></td>
-		</tr>
-		<tr>
-			<td colspan="2" bgcolor="#606060"></td>
+			<td>
+				<form action="WorkflowproUpdate" method="post">
+					<input type="hidden" name="id" value="${item.id}">
+					<button type="submit" class="btn btn-link"><i>${item.id}</i></button>
+				</form>
+			</td>
+			<td><i>${item.end}</i></td>
+			<td><i>${item.name}</i></td>
+			<td><i>${item.task}</i></td>
+			<td><i>${item.status}</i></td>
 		</tr>
 	</c:forEach>
 	</table>
-	
 	
 </center>
 </body>

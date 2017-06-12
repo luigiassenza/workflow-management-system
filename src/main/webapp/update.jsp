@@ -28,10 +28,23 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 	%>
 
 
-<div align="right">
-	<form action="WorkflowproLogout" method="post">
-		<b><i>${username}</i></b> <button class="btn btn-default" type="submit">Logout</button>
-	</form>
+<div class="row">
+	<div class="col-md-1">
+		<div align="left">
+			<form action="WorkflowproHomepage" method="post">
+				<button class="btn btn-default" type="submit">Homepage</button>
+			</form>
+		</div>
+	</div>
+	<div class="col-md-9">
+	</div>
+	<div class="col-md-2">
+		<div align="right">
+			<form action="WorkflowproLogout" method="post">
+				<b><i>${username}</i></b> <button class="btn btn-default" type="submit">Logout</button>
+			</form>
+		</div>
+	</div>
 </div>
 
 <center>
@@ -144,7 +157,7 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
        	
        	
 	 <form id="commentForm" name="commentForm" action="WorkflowproCommentsRegister" method="post">
-	 	<textarea id="comment" name="comment" placeholder="Write comment"></textarea>
+	 	<textarea id="comment" name="comment" placeholder="Write comment" class="form-control" style="max-width: 30%"></textarea>
 	 	<input type="hidden" name="idWorkflowpro" value="${item.id}">
 	 	<input type="hidden" name="username" value="${username}"><br>
 	 	<input type="submit" value="Sent Comment" class="btn btn-default">
@@ -176,7 +189,7 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 <div id="content"></div>
 					
 				</tr>
-				 <!--  ${item.id} id works till here -->
+				 
 				<!-- end section to show files if any -->
 			<!-- </c:forEach> -->
 			

@@ -14,6 +14,13 @@ import com.company.workflowpro.model.dto.WorkflowproDetail;
 public class WorkflowproDisplay extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//doGet(request, response);
 		try {
 			ArrayList<WorkflowproDetail> workflowspro = new WorkflowproToDisplay().getData();
 			request.setAttribute("workflowspro", workflowspro);
@@ -21,12 +28,6 @@ public class WorkflowproDisplay extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 
 }

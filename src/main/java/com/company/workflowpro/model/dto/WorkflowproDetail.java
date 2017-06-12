@@ -68,5 +68,8 @@ public class WorkflowproDetail {
 		this.comments = comments;
 	}
 	
+	public String toString() {
+		return id + " " + name + " " + task + " " + start + " " + end + " " + status + " " + comments;
+	}
 
 }

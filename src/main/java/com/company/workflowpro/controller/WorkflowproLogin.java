@@ -20,7 +20,7 @@ public class WorkflowproLogin extends HttpServlet {
 			if(nameCheck == true) {
 				HttpSession session = request.getSession();
 				session.setAttribute("username", username);
-				request.getRequestDispatcher("./WorkflowproDisplay").forward(request, response);
+				request.getRequestDispatcher("./WorkflowproHomepage").forward(request, response);
 			} else if(nameCheck == false){
 				String message = "Please enter a correct username";
 				request.setAttribute("message", message);

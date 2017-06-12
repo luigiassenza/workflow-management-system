@@ -172,6 +172,24 @@
   	<description></description>
   	<servlet-class>com.company.workflowpro.controller.WorkflowproCommentsRegister</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>WorkflowproCommentsDisplayReverse</servlet-name>
+  	<display-name>WorkflowproCommentsDisplayReverse</display-name>
+  	<description></description>
+  	<servlet-class>com.company.workflowpro.controller.WorkflowproCommentsDisplayReverse</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WorkflowproHomepage</servlet-name>
+  	<display-name>WorkflowproHomepage</display-name>
+  	<description></description>
+  	<servlet-class>com.company.workflowpro.controller.WorkflowproHomepage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WorkflowproDisplayReverse</servlet-name>
+  	<display-name>WorkflowproDisplayReverse</display-name>
+  	<description></description>
+  	<servlet-class>com.company.workflowpro.controller.WorkflowproDisplayReverse</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>WorkflowproDisplay</servlet-name>
   	<url-pattern>/WorkflowproDisplay</url-pattern>
@@ -283,6 +301,18 @@
   <servlet-mapping>
   	<servlet-name>WorkflowproCommentsRegister</servlet-name>
   	<url-pattern>/WorkflowproCommentsRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WorkflowproCommentsDisplayReverse</servlet-name>
+  	<url-pattern>/WorkflowproCommentsDisplayReverse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WorkflowproHomepage</servlet-name>
+  	<url-pattern>/WorkflowproHomepage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WorkflowproDisplayReverse</servlet-name>
+  	<url-pattern>/WorkflowproDisplayReverse</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>
