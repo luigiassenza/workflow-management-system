@@ -89,8 +89,8 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 				<td style="vertical-align:middle">${item.id}</td>
 				<td style="vertical-align:middle">${item.name}</td>
 				<td style="vertical-align:middle">${item.task}</td>
-				<td style="vertical-align:middle">${item.start}</td>
-				<td style="vertical-align:middle">${item.end}</td>
+				<td style="vertical-align:middle"><script>document.write(new Date("${item.start}").getDate()+"/"+(new Date("${item.start}").getMonth()+1)+"/"+new Date("${item.start}").getFullYear())</script></td>
+				<td style="vertical-align:middle"><script>document.write(new Date("${item.end}").getDate()+"/"+(new Date("${item.end}").getMonth()+1)+"/"+new Date("${item.end}").getFullYear())</script></td>
 				<td style="vertical-align:middle">${item.status}</td>
 				<td style="vertical-align:middle">${item.comments}</td>
 				<td>
