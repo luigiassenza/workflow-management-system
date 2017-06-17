@@ -150,7 +150,7 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
             $(document).ready(function(){
                  setInterval(function() {
                       $("#javaquery").load("WorkflowproCommentsDisplay",{idWorkflowpro:${item.id}});
-                 }, 3000);
+                 }, 1000);
             });
        	</script>
        	<div id="javaquery"></div>
