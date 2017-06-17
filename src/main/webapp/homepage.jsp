@@ -47,7 +47,7 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 	            $(document).ready(function(){
 	                 setInterval(function() {
 	                      $("#tasks").load("WorkflowproDisplayReverse");
-	                 }, 3000);
+	                 }, 1000);
 	            });
 	       	</script>
        		<div id="tasks"></div>
@@ -64,7 +64,7 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
 	            $(document).ready(function(){
 	                 setInterval(function() {
 	                      $("#comments").load("WorkflowproCommentsDisplayReverse");
-	                 }, 3000);
+	                 }, 1000);
 	            });
 	       	</script>
        		<div id="comments"></div>
